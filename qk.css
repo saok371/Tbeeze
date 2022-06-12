@@ -1,0 +1,119 @@
+.footer{
+    height: 100vh;
+    background: rgb(0,0,0,.6);
+    color: #fff;
+}
+
+.footer h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 70px 0;
+    font-weight: bolder;
+}
+
+  .contact{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+  }
+
+  .personal{
+      padding-left: 40px;
+  }
+
+  .personal h3{
+      padding-bottom: 20px;
+  }
+
+  .personal-text{
+      padding-bottom: 20px;
+  
+  }
+  
+  .name,.location,.mail,.phone{
+      padding-bottom: 20px;
+      line-height: 25px;
+      padding-left: 40px;
+  }
+
+  .personal .fa-user{
+      position: absolute;
+      top: 349%; left:3%;
+      
+  }
+
+  .personal .fa-map-marker-alt{
+      position: absolute;
+      top: 360%; left:3%;
+  }
+
+  .personal .fa-envelope{
+      position: absolute;
+      top: 370%; left:3%;
+  }
+
+  .personal .fa-phone-alt{
+      position: absolute;
+      top: 381%; left:3%; 
+
+  }
+
+  .personal i{
+      color: crimson;
+
+  }
+
+
+  .form{
+      margin-right: 40px;
+  
+  }
+
+  .form h3{
+      padding-bottom: 20px; 
+      padding-left: 40px;
+      
+  }
+
+  .borders input, .borders textarea{
+      margin: 10px 40px;
+      width: 250px;
+      height: 30px;
+      padding-left: 10px;
+      font-size: 15px;
+      border-style: solid;
+      border-width: 1.5px;
+     border-color: crimson;
+     border-radius: 5px;
+     color: black;
+  }
+
+   .subject input{
+     width: 582px;
+  }
+
+  .borders textarea{
+      width: 582px;  
+      height: 150px;
+  }
+
+  .form button{
+      margin: 0px 40px;
+      width: 130px;
+      height: 35px;
+      font-size: 18px;
+      border-radius: 5px;
+      background: crimson;
+      color: #fff;
+  }
+
+  .form button:hover{
+      opacity: 0.7;
+  }
+
+  .copyright{
+      text-align: center;
+      margin-top: 25px;
+      padding: 20px 0;
+      background: black;
+  }

@@ -1,0 +1,145 @@
+
+:root{
+    --green:#27ae60;
+    --blue:#192a56;
+    --light-color:rgb(102,102,102);
+    --box-shadow:0 8px 24px rgba(0,0,0,.1)
+
+}
+
+*{
+   font-family: sans-serif;
+   margin: 0; padding: 0;
+   outline: none; border: none;
+   box-sizing: border-box;
+   text-decoration: none;
+   text-transform: capitalize;
+  transition: all .3s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    /*background: #fff;
+    box-shadow: var(--box-shadow); */
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   z-index: 99;
+}
+
+.scroll {
+    background: #fff;
+    box-shadow: var(--box-shadow);
+  }
+  .scroll .navbar a{
+    color: var(--light-color);
+
+  }
+
+header .logo{
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--blue);
+}
+
+header .logo i{
+    color: var(--green);
+}
+
+
+header .navbar{
+       font-size: 19px;
+       
+}
+
+header .navbar a{
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    margin-left: 40px;
+    
+}
+
+header .navbar a:hover,
+header .navbar a.active{
+    color: #fff;
+    background: var(--green);
+}
+
+header .icon{
+ cursor: pointer;
+ font-size: 15px;
+ margin-left: 30px;
+ height: 30px;
+ line-height: 30px;
+ width: 30px;
+ /*background: #eee;*/
+ text-align: center;
+ border-radius: 50%;
+display: none;
+}
+
+
+@media(max-width:975px){
+    header .navbar a{
+    margin-left: 20px;
+    
+}  
+
+}
+
+@media(max-width:640px){
+    header .navbar a{
+    margin-left: 0px;
+    padding: 5px 10px;
+    
+}  
+
+}
+
+@media(max-width:500px){
+    header .navbar{
+       position: absolute;
+       top: 100%; left: 0; right: 0;
+       border-top: 1px solid rgb(0,0,0,0.2) ;
+       border-bottom: 1px solid rgb(0,0,0,0.2);
+       background: #fff;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+    }
+
+    header .navbar a{
+        color: black;
+        
+        
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+
+
+    
+    header .navbar a{
+        display:block ;
+        padding: 10px 20px;
+        background: #eee;
+        margin: 15px;
+    }
+
+
+    header .icon{
+        display: inline-block;
+    }
+
+    
+}  
+
