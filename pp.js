@@ -59,5 +59,15 @@ window.addEventListener('scroll', () => {
 
 })
 
+var Sending = document.querySelector('.mess');
+
+var Send = document.querySelector('.form');
+
+function  Message(){
+  
+  Sending.classList.add('active');
+  Send.classList.add('active');
+
+}
  
     
