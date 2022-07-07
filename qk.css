@@ -1,5 +1,9 @@
-.footer{
+.base{
     height: 100vh;
+}
+
+.footer{
+    height: 90vh;
     background: rgb(0,0,0,.6);
     color: #fff;
 }
@@ -27,6 +31,7 @@
 
   .personal-text{
       padding-bottom: 20px;
+      width: 400px;
   
   }
   
@@ -38,23 +43,23 @@
 
   .personal .fa-user{
       position: absolute;
-      top: 349%; left:3%;
+      top: 347%; left:3%;
       
   }
 
   .personal .fa-map-marker-alt{
       position: absolute;
-      top: 360%; left:3%;
+      top: 358%; left:3%;
   }
 
   .personal .fa-envelope{
       position: absolute;
-      top: 370%; left:3%;
+      top: 368%; left:3%;
   }
 
   .personal .fa-phone-alt{
       position: absolute;
-      top: 381%; left:3%; 
+      top: 378%; left:3%; 
 
   }
 
@@ -65,8 +70,11 @@
 
 
   .form{
-      margin-right: 40px;
-  
+      margin-right: 40px; 
+  }
+
+  .form.active{
+    display: none;
   }
 
   .form h3{
@@ -75,8 +83,24 @@
       
   }
 
+  
+
+  .mess{
+    display: none;
+    position: absolute;
+    top: 330%; left: 46%;
+    
+  }
+
+
+  .mess.active{
+ display: inline-block;
+  }
+
+  
+
   .borders input, .borders textarea{
-      margin: 10px 40px;
+      margin: 10px 35px;
       width: 250px;
       height: 30px;
       padding-left: 10px;
@@ -113,7 +137,500 @@
 
   .copyright{
       text-align: center;
-      margin-top: 25px;
       padding: 20px 0;
       background: black;
+      color: #fff;
+      height: 10vh;
   }
+
+  @media(max-width:1117px){
+
+    .personal .fa-user{
+        top: 347.5%; left:4%;
+        
+    }
+    
+    .personal .fa-map-marker-alt{
+        top: 358%; left:4%;
+    }
+    
+    .personal .fa-envelope{
+        top: 368%; left:4%;
+    }
+    
+    .personal .fa-phone-alt{
+        top: 378%; left:4%; 
+    
+    }
+    
+
+  }
+
+  @media (max-width:1098px) {
+    .borders input, .borders textarea{
+      width: 400px;
+  }
+
+  .form{
+    margin-left: 100px; 
+}
+
+.personal .fa-user{
+    top: 347.5%; left:4%;
+    
+}
+
+.personal .fa-map-marker-alt{
+    top: 358%; left:4%;
+}
+
+.personal .fa-envelope{
+    top: 368%; left:4%;
+}
+
+.personal .fa-phone-alt{
+    top: 378%; left:4%; 
+
+}
+
+}
+
+
+@media (max-width:1020px) {
+    .borders input, .borders textarea{
+      width: 359px;
+  }
+
+  .form{
+    margin-left: 40px; 
+}
+
+.personal .fa-user{
+    top: 347.5%; left:4%;
+    
+}
+
+.personal .fa-map-marker-alt{
+    top: 358%; left:4%;
+}
+
+.personal .fa-envelope{
+    top: 368%; left:4%;
+}
+
+.personal .fa-phone-alt{
+    top: 378%; left:4%; 
+
+}
+
+
+}
+
+@media (max-width:951px) {
+    .borders input, .borders textarea{
+      width: 350px;
+  }
+
+  .mess.active{
+    font-size: 30px;
+}
+
+.personal .fa-user{
+    top: 347.5%; left:5%;
+    
+}
+
+.personal .fa-map-marker-alt{
+    top: 358%; left:5%;
+}
+
+.personal .fa-envelope{
+    top: 368%; left:5%;
+}
+
+.personal .fa-phone-alt{
+    top: 378%; left:5%; 
+
+}
+
+
+  }
+
+
+@media (max-width:897px) {
+    .borders input, .borders textarea{
+      width: 340px;
+  }
+  .personal-text{
+    text-align: justify;
+    width: 365px;
+}
+
+
+
+.form{
+    margin-left: 14px; 
+}
+
+.personal .fa-user{
+    top: 347.5%; left:5%;
+    
+}
+
+.personal .fa-map-marker-alt{
+    top: 358%; left:5%;
+}
+
+.personal .fa-envelope{
+    top: 368%; left:5%;
+}
+
+.personal .fa-phone-alt{
+    top: 378%; left:5%; 
+
+}
+
+}
+
+@media (max-width:825px) {
+    .form{
+        margin-left: 0px; 
+    }   
+
+    .personal-text{
+        text-align: justify;
+        width: 355px;
+    }
+
+    .personal .fa-user{
+        top: 350%; left:5%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 361%; left:5%;
+    }
+  
+    .personal .fa-envelope{
+        top: 371%; left:5%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 381%; left:5%; 
+  
+    }
+    
+}
+
+ 
+
+  @media (max-width:800px) {
+
+    .contact{
+        display: block;
+       
+        
+    }
+    
+    .base{
+        height: 160vh;
+        
+    }
+
+    .footer{
+        height: 150vh;
+    }
+    
+    .borders input, .borders textarea{
+        width: 700px;
+    }
+
+    .personal-text{
+        text-align: justify;
+        width: 700px;
+    }
+
+    .form{
+        padding-top: 15px;
+    }
+
+    .copyright{
+        font-size: 14px;
+        height: 10vh;
+    }
+
+    .mess{
+        display: none;
+        position: absolute;
+        top: 390%; left: 15%;
+        
+      }
+
+      .personal .fa-user{
+        top: 345%; left:6%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 356%; left:6%;
+    }
+  
+    .personal .fa-envelope{
+        top: 366%; left:6%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 376%; left:6%; 
+  
+    }
+}
+  
+@media (max-width:771px) {
+
+    .borders input, .borders textarea{
+        width: 600px;
+    }
+
+    .form, .personal{
+        margin-left: 30px; 
+    }   
+
+    
+    .personal-text{
+        width: 600px;
+    }
+
+    .personal .fa-user{
+        top: 390%; left:10%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 400%; left:10%;
+    }
+  
+    .personal .fa-envelope{
+        top: 410%; left:10%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 420%; left:10%; 
+  
+}
+
+.mess{
+        
+    top: 440%; left: 15%;
+    
+  }
+}
+
+@media(max-width:756px){
+    
+    .personal .fa-user{
+        top: 420%; left:10%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 430%; left:10%;
+    }
+  
+    .personal .fa-envelope{
+        top: 440%; left:10%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 450%; left:10%; 
+  }
+
+.mess{
+        
+    top: 475%; left: 15%;
+    
+  }
+}
+
+@media(max-width:714px){
+    .borders input, .borders textarea{
+        width: 500px;
+    }
+
+    .personal-text{
+        width: 500px;
+    }
+
+    .personal .fa-user{
+        top: 422%; left:10%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 432%; left:10%;
+    }
+  
+    .personal .fa-envelope{
+        top: 442%; left:10%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 452%; left:10%; 
+  }
+}
+
+@media(max-width:695px){
+    
+    .personal .fa-user{
+         left:12%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+         left:12%;
+    }
+  
+    .personal .fa-envelope{
+         left:12%;
+    }
+  
+    .personal .fa-phone-alt{
+         left:12%; 
+  }
+
+
+    }
+
+    @media(max-width:615px){
+        .form, .personal{
+            margin-left: 15px; 
+        } 
+        
+        .borders input, .borders textarea{
+            width: 450px;
+        }
+    
+        .personal-text{
+            width: 450px;
+        }
+    }
+
+@media(max-width:585px){
+    .personal .fa-user{
+        top: 433%; left:11%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 443%; left:11%;
+    }
+  
+    .personal .fa-envelope{
+        top: 453%; left:11%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 463%; left:11%; 
+  }
+
+}
+
+@media(max-width:549px){
+    .borders input, .borders textarea{
+        width: 400px;
+    }
+}
+@media(max-width:536px){
+    
+    .personal .fa-user{
+        top: 448%; left:12%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 458%; left:12%;
+    }
+  
+    .personal .fa-envelope{
+        top: 468%; left:12%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 478%; left:12%; 
+  }
+
+
+    }
+
+@media (max-width:500px) {
+
+    .contact{
+        display: block;
+        margin-left: 0px;
+    }
+    
+    .base{
+        height: 160vh;
+        
+    }
+
+    .footer{
+        height: 150vh;
+    }
+    
+    .borders input, .borders textarea{
+        width: 394px;
+    }
+
+    .personal-text{
+        text-align: justify;
+        width: 394px;
+    }
+
+    .form{
+        padding-top: 15px;
+    }
+
+    .copyright{
+        font-size: 14px;
+        height: 10vh;
+    }
+
+    .mess{
+        display: none;
+        position: absolute;
+        top: 500%; left: 1%;
+        
+      }
+
+      .personal .fa-user{
+        top: 458%; left:15%;
+        
+    }
+  
+    .personal .fa-map-marker-alt{
+        top: 468%; left:15%;
+    }
+  
+    .personal .fa-envelope{
+        top: 478%; left:15%;
+    }
+  
+    .personal .fa-phone-alt{
+        top: 489%; left:15%; 
+  
+    }
+
+    
+  
+}
+  
+
+
+
+
+
+
+
+
+
+
